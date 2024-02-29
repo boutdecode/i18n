@@ -14,13 +14,7 @@ $ npm install @boutdecode/i18n
 
 For yion : 
 
-Before, add env variable
-```.env
-LOCALE=fr // Default locale
-TRANSLATION_FOLDER=/translations
-```
-
-Next create translation files like : 
+Before create translation files like :
 
 `whatever.<lang>.json|js`
 
@@ -36,13 +30,19 @@ Finally
 
 ```javascript
 const { createApp, createServer } = require('@boutdecode/yion')
-const i18nPlugin = require('@boutdecode/i18n/yion/i18n-plugin')
+const i18nPlugin = require('@boutdecode/i18n')
 
 const app = createApp()
-const server = createServer(app, [i18nPlugin])
+const server = createServer(app)
 
-app.get('/', (req, res) => {
-    req.attributes.locale // Current locale, null if not detected
+app.use(i18nPlugin({
+  locale: 'en', // Default locale
+  folder: 'translations' // Folder where translation files are located
+}))
+
+app.get('/', ({ i18n }) => {
+  i18n.locale // Current locale, null if not detected
+  i18n.t('hello') // translate hello
 })
 
 server.listen(8080)
