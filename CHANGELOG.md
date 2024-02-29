@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/boutdecode/i18n/compare/v2.0.0...v2.0.1) (2024-02-29)
+
+
+### Bug Fixes
+
+* Folder default ([e3b7fc3](https://github.com/boutdecode/i18n/commit/e3b7fc398ac58eb99897db49025d885ff8775839))
+
 # [2.0.0](https://github.com/boutdecode/i18n/compare/v1.0.0...v2.0.0) (2024-02-29)
 
 

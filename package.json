@@ -1,6 +1,6 @@
 {
   "name": "@boutdecode/i18n",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "I18N lib by boutdecode for Yion",
   "main": "plugin/i18n.js",
   "scripts": {
