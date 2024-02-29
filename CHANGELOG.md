@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/boutdecode/i18n/compare/v1.0.0...v2.0.0) (2024-02-29)
+
+
+### Features
+
+* Release 2.0.0 ([4399134](https://github.com/boutdecode/i18n/commit/439913451db95840f17bb3cb5dce5cc5ce8f8876))
+
+
+### BREAKING CHANGES
+
+* Use Yion 3.0.0
+
 # 1.0.0 (2024-02-29)
 
 ### Bug Fixes
