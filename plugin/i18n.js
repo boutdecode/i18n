@@ -25,7 +25,7 @@ const getTranslations = (translationFolder) => {
   return translations
 }
 
-module.exports = ({ folder, locale = 'en' }) => (context, next) => {
+module.exports = ({ folder, locale = 'en' } = {}) => (context, next) => {
   const { req } = context
   const translationFolder = path.resolve(process.cwd(), folder || 'translations')
 
